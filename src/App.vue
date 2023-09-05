@@ -1,47 +1,59 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div id="app">
+    <nav id="navigation">
+      <li>Home</li>
+      <li>To-Do List</li>
+      <li>Journal Entries</li>
+      <li>Schedule</li>
+    </nav>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div id="welcome-login">
+      <h1> Welcome _insert user's name_!</h1>
+      <button>Sign up?</button>
+      <p>If you already have an account, <a href="#">log in</a></p>
     </div>
-  </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <div id="to-do-list">
+      <h2>To-Do List</h2>
+      <div id="add-to-list">
+        <h4>Add to To-Do</h4>
+        <input type="text" id="add-item" placeholder="Insert new task...">
+        <button onclick="" class="addBtn">Add</button>
+      </div>
+      <div id="task-list">
+        <ul>
+          <li>Finish HTML & CSS</li>
+          <li>Add the JS and Vue</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="journal-entry">
+      <h2>Journal Entries</h2>
+      <input type="text" id="entry-title" placeholder="Title of Entry...">
+      <input type="date" id="entry-date">
+      <p><a href="#">Previous Entries?</a></p>
+      <input type="text" id="entry-desc" placeholder="Whatchu thinking?">
+    </div>
+
+    <div id="schedule">
+      <h2>Schedule</h2>
+      <!--Follow this guide : https://www.educative.io/answers/how-to-create-an-animated-calendar-with-html-and-css -->
+    </div>
+  </div>
 </template>
 
+<script>
+
+export default {
+
+}
+</script>
+
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+@media (min-width: 1024px) {}
 </style>
