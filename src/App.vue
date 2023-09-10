@@ -1,16 +1,12 @@
 <script setup>
-
+import Navigation from './components/navigation.vue'
 </script>
 
 <template>
   <div id="app">
-    <nav id="navigation">
-      <li>Home</li>
-      <li>To-Do List</li>
-      <li>Journal Entries</li>
-      <li>Schedule</li>
-    </nav>
-
+    
+    <Navigation />
+    <!--
     <div id="welcome-login">
       <h1> Welcome _insert user's name_!</h1>
       <button>Sign up?</button>
@@ -39,9 +35,11 @@
       <p><a href="#">Previous Entries?</a></p>
       <input type="text" id="entry-desc" placeholder="Whatchu thinking?">
     </div>
-
+    -->
+    
     <div id="schedule">
-      <h2>Schedule</h2>
+      <!--<h2>Schedule</h2>-->
+    
       <!--Follow this guide : https://www.educative.io/answers/how-to-create-an-animated-calendar-with-html-and-css -->
     </div>
   </div>
