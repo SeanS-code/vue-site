@@ -9,12 +9,13 @@ import Toggle from './toggleswitch.vue'
 
     <nav id="navigation">
         <img src="src/assets/logo.jpg"/>
+        <div class="toggle"><Toggle /></div>
         <ul>
-            <Toggle />
             <li><a href="#">Home</a></li>
             <li><a href="#">To-Do List</a></li>
             <li><a href="#">Journal Entries</a></li>
             <li><a href="#">Schedule</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
     </nav>
 </template>
@@ -24,55 +25,68 @@ import Toggle from './toggleswitch.vue'
 #navigation {
     position: absolute;
     width: 98.2%;
-    border: 1px solid black;
     display: flex;
     padding: 1em;
 }
 
 #navigation img {
     /* 17% left */
-    margin: 0 0 0 17%;
+    position: relative;
+    left: 17%;
     width: 3%;
     height: 3%;
     display: inline-block;
-    border: 1px solid yellow;
+}
+
+.toggle {
+    position: relative;
+    left: 45%;
+    width: 7%;
+    height: 2.1em;
+    display: inline-block;
 }
 
 #navigation ul {
     display: inline-block;
     width: 50em;
     height: 2.1em;
-    margin: 0 0 0 35%;
+    position: relative;
+    left: 45%;
     padding: 0;
 
     list-style: none;
-    border: 1px solid orange;
 }
 
 #navigation ul li {
     display: inline-block;
     width: 10em;
-
+    
     margin: 0 0.35em;
     padding: .5em;
     
     /* Center the text vertically */
     text-align: center;
     vertical-align: middle;
-    border: 1px solid red;
 
     font-family: 'Poppins', sans-serif;
-    font-size: 1em;
+    font-size: .85em;
     text-transform: uppercase;
 }
 
+#navigation ul li:nth-child(3) {
+    margin: 0 0.5em;
+}
+
 #navigation ul li:first-child {
-    margin: 0 0.35em 0 0;
+    position: relative;
+    left: 1.5em
 }
 
 #navigation ul li:last-child {
-    margin: 0 0 0 0.35em;
+    position: relative;
+    right: 1.5em
 }
+
 
 a {
     color: #C8D2E4;

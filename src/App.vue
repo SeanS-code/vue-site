@@ -1,10 +1,10 @@
 <script setup>
 import Navigation from './components/navigation.vue'
+import Toggle from './components/toggleswitch.vue'
 </script>
 
 <template>
   <div id="app">
-    
     <Navigation />
     <!--
     <div id="welcome-login">
