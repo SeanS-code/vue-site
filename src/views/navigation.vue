@@ -1,23 +1,22 @@
 <script setup>
-import Toggle from './toggleswitch.vue'
+import Toggle from '../components/toggleswitch.vue'
 </script>
 
 <template>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <nav id="navigation">
-        <img src="src/assets/logo.jpg"/>
-        <div class="toggle"><Toggle /></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">To-Do List</a></li>
-            <li><a href="#">Journal Entries</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-    </nav>
+        <nav id="navigation">
+            <img src="src/assets/logo.jpg"/>
+            <div class="toggle"><Toggle /></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">To-Do List</a></li>
+                <li><a href="#">Journal Entries</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
 </template>
 
 <style>
@@ -30,7 +29,6 @@ import Toggle from './toggleswitch.vue'
 }
 
 #navigation img {
-    /* 17% left */
     position: relative;
     left: 17%;
     width: 3%;
@@ -40,7 +38,7 @@ import Toggle from './toggleswitch.vue'
 
 .toggle {
     position: relative;
-    left: 45%;
+    left: 48%;
     width: 7%;
     height: 2.1em;
     display: inline-block;
@@ -48,10 +46,10 @@ import Toggle from './toggleswitch.vue'
 
 #navigation ul {
     display: inline-block;
-    width: 50em;
+    width: 43%;
     height: 2.1em;
     position: relative;
-    left: 45%;
+    left: 46%;
     padding: 0;
 
     list-style: none;
@@ -63,8 +61,7 @@ import Toggle from './toggleswitch.vue'
     
     margin: 0 0.35em;
     padding: .5em;
-    
-    /* Center the text vertically */
+
     text-align: center;
     vertical-align: middle;
 
@@ -79,18 +76,20 @@ import Toggle from './toggleswitch.vue'
 
 #navigation ul li:first-child {
     position: relative;
-    left: 1.5em
 }
 
 #navigation ul li:last-child {
     position: relative;
-    right: 1.5em
 }
 
-
-a {
+#navigation a {
     color: #C8D2E4;
     text-decoration: none;
+    transition: all .25s ease-in-out;
 }
 
+#navigation a:hover {
+    color: white;
+    transition: all .25s ease-in-out;
+}
 </style>

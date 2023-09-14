@@ -5,33 +5,25 @@
 </script>
 
 <template>
-    <div class="container">
-        <label for="checkbox">
-            <input type="checkbox" name="" id="checkbox">
-            <div class="toggle"></div>
-        </label>
-    </div>
+    <label class="invisible">
+        <input type="checkbox" name="" id="checkbox" checked>
+        <div class="toggle"></div>
+    </label>
 </template>
 
 <style scoped>
-    .container {
-        height: 100%;
-        width: 100%;
-    }
 
     #checkbox {
         opacity: 0;
         width: 0;
         height: 0;
     }
-
     .toggle {
         height: 30px;
         width: 60px;
-        position: relative;
-        left: 30%;
         border-radius: 9999px;
-              
+        
+        left: 10%;
         background-color: #f5f5fc;
         position: relative;
         cursor: pointer;

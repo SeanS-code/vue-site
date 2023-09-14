@@ -1,47 +1,25 @@
 <script setup>
-import Navigation from './components/navigation.vue'
-import Toggle from './components/toggleswitch.vue'
+import Navigation from './views/navigation.vue'
+import Welcome from './views/welcome.vue'
+import ToDo from './views/todo.vue'
+import Entries from './views/entries.vue'
+import Schedule from './views/schedule.vue'
+import Footing from './views/footer.vue'
 </script>
 
 <template>
   <div id="app">
     <Navigation />
-    <!--
-    <div id="welcome-login">
-      <h1> Welcome _insert user's name_!</h1>
-      <button>Sign up?</button>
-      <p>If you already have an account, <a href="#">log in</a></p>
-    </div>
 
-    <div id="to-do-list">
-      <h2>To-Do List</h2>
-      <div id="add-to-list">
-        <h4>Add to To-Do</h4>
-        <input type="text" id="add-item" placeholder="Insert new task...">
-        <button onclick="" class="addBtn">Add</button>
-      </div>
-      <div id="task-list">
-        <ul>
-          <li>Finish HTML & CSS</li>
-          <li>Add the JS and Vue</li>
-        </ul>
-      </div>
-    </div>
+    <Welcome />
 
-    <div id="journal-entry">
-      <h2>Journal Entries</h2>
-      <input type="text" id="entry-title" placeholder="Title of Entry...">
-      <input type="date" id="entry-date">
-      <p><a href="#">Previous Entries?</a></p>
-      <input type="text" id="entry-desc" placeholder="Whatchu thinking?">
-    </div>
-    -->
-    
-    <div id="schedule">
-      <!--<h2>Schedule</h2>-->
-    
-      <!--Follow this guide : https://www.educative.io/answers/how-to-create-an-animated-calendar-with-html-and-css -->
-    </div>
+    <ToDo />
+
+    <Entries />
+
+    <Schedule />
+
+    <Footing />
   </div>
 </template>
 
