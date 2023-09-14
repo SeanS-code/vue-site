@@ -11,7 +11,7 @@
 <style>
 #entries {
     position: absolute;
-    top: 160%;
+    top: 200%;
 
     width: 100%;
     height: 60%;

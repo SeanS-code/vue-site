@@ -14,5 +14,11 @@
 </template>
 
 <style>
+#footer {
+    position: absolute;
+    top: 280%;
 
+    height: 20%;
+    width: 100%;
+}
 </style>

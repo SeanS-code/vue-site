@@ -12,6 +12,6 @@
     width: 100%;
     height: 60%;
 
-    background-color: aqua;
+    background-color: #0F172A;
 }
 </style>

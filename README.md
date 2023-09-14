@@ -1,7 +1,12 @@
-# Creating a Web Application Using Vue.js
+# Creating a Web Application Using Vue.js (MEVN Stack)
 
-# HTML
-HTML Skeleton Code | 05-09-2023
+## Front-End Framework:
+Vue.js
 
+## APIs
+Express.js
+GraphQL
 
-# CSS
+## Back-End Framework
+Node.js
+Firebase
