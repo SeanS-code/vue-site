@@ -1,12 +1,2 @@
-# Creating a Web Application Using Vue.js (MEVN Stack)
+# Web Application
 
-## Front-End Framework:
-Vue.js
-
-## APIs
-Express.js
-GraphQL
-
-## Back-End Framework
-Node.js
-Firebase
