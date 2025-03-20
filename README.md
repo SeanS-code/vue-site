@@ -1,5 +1,5 @@
 # WebApp using Vue
 
-## Project Summary
+## Description
 
 Simple Vue.js WebApp to experiment and test with the framework
